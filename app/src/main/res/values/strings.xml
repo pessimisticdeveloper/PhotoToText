@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">photoToText</string>
+    <string name="g_r_nt_al">Görüntü Al</string>
+    <string name="metni_tan">Metni Tanı</string>
+</resources>

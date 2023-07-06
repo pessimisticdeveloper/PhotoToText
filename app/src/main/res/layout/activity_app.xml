@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#262830"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AppActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/inputImageBtn"
+            android:background="@drawable/btn_bg"
+            app:cornerRadius="5dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="5dp"
+            android:text="@string/g_r_nt_al"
+            app:icon="@drawable/baseline_add_a_photo_24"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/recognizeTextBtn"
+            app:cornerRadius="5dp"
+            android:background="@drawable/btn_bg"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:text="@string/metni_tan"
+            app:icon="@drawable/baseline_document_scanner_24"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:background="@drawable/edt_bg"
+                android:layout_width="match_parent"
+                android:id="@+id/imageTv"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_image_search_24"
+                android:adjustViewBounds="true"
+                app:strokeWidth="2dp"/>
+            <TextView
+                android:background="@drawable/edt_bg"
+                android:layout_marginTop="20dp"
+                android:id="@+id/recognizedTextEt"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/copy"
+                android:background="@drawable/btn_bg"
+                app:icon="@drawable/baseline_copyright_24"
+                android:text="Metni kopyala"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
